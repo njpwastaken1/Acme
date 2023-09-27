@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACME</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="dark-background align">
+        <div class="row align top-change change-center">
+          <div class="column align-end">
+            <a href="#" class="top-btn text-white btn">Announcement</a>
+          </div>
+          <div class="column text-white">
+            <p class="p-top">How we're responding to COVID-19</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <div class="red-background padding-border">
+        <div class="row wrapper">
+          <div class="column">
+            <a href="#"
+              ><img src="images/5e7ff57adad44d1f072965b6_logo.svg" /
+              class="align-center"></a
+            >
+          </div>
+          <div class="column align-end hide">
+            <nav class="nav-gap">
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >Home</a
+              >
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >About</a
+              >
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >Shop</a
+              >
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >Donate</a
+              >
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >Contact</a
+              >
+            </nav>
+          </div>
+          <div class="column dont-show fit">
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+              <!-- Button to close the overlay navigation -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()"
+              ><div class="icon">
+                <i class="bx bx-menu-alt-right text-white"></i></div
+            ></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="donate-hero padding-border padding-section">
+        <div class="row wrapper">
+          <div class="column text-gap align-center">
+            <h1 class="h1-size text-white text-center">
+              Here at Acme Outdoors
+            </h1>
+            <h3 class="h3-size text-white">every dollar counts</h3>
+            <p class="p-size p-max text-white text-center">
+              Acme Outdoors is more than just a company, we're a community of
+              people who care for one another and for our city. During this
+              time, due to shelter in place orders, only a select few of our
+              staff are able to work. Any donations you make to Acme will help
+              make sure our employees are cared for and can stay safe in these
+              uncertain times.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper padding-small">
+        <div class="row align-center">
+          <div class="column outline text-gap card-donate fit">
+            <a href="#" class="btn btn-details text-center btn-donate"
+              >Donate $100</a
+            >
+            <a href="#" class="btn btn-details text-center btn-donate"
+              >Donate $50</a
+            >
+            <a href="#" class="btn btn-details text-center btn-donate"
+              >Donate $25</a
+            >
+            <a href="#" class="btn btn-details text-center btn-donate"
+              >Donate $15</a
+            >
+            <a href="#" class="btn btn-details text-center btn-donate"
+              >Donate $5<</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="dark-alternate padding-small padding-border">
+        <div class="wrapper row top-change change-center">
+          <div class="column">
+            <a href="#"
+              ><img src="images/5e7ff57adad44d1f072965b6_logo.svg" /
+              class="align-center"></a
+            >
+          </div>
+          <div class="column align-end">
+            <ul class="fnav text-gap">
+              <div class="icon-holder"><i class="bx bxl-twitter"></i></div>
+              <div class="icon-holder">
+                <i class="bx bxl-facebook-circle"></i>
+              </div>
+              <div class="icon-holder">
+                <i class="bx bxl-instagram-alt"></i>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column align-center">
+            <p class="text-white">Made By Nathan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Open when someone clicks on the span element */
+      function openNav() {
+        document.getElementById('myNav').style.width = '100%';
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+        document.getElementById('myNav').style.width = '0%';
+      }
+    </script>
+  </body>
+</html>

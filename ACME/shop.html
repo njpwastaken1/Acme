@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACME</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="dark-background align">
+        <div class="row align top-change change-center">
+          <div class="column align-end">
+            <a href="#" class="top-btn text-white btn">Announcement</a>
+          </div>
+          <div class="column text-white">
+            <p class="p-top">How we're responding to COVID-19</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <div class="red-background padding-border">
+        <div class="row wrapper">
+          <div class="column">
+            <a href="#"
+              ><img src="images/5e7ff57adad44d1f072965b6_logo.svg" /
+              class="align-center"></a
+            >
+          </div>
+          <div class="column align-end hide">
+            <nav class="nav-gap">
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >Home</a
+              >
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >About</a
+              >
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >Shop</a
+              >
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >Donate</a
+              >
+              <a href="#" class="text-white nav-size text-dec nav-hover"
+                >Contact</a
+              >
+            </nav>
+          </div>
+          <div class="column dont-show fit">
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+              <!-- Button to close the overlay navigation -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+
+              <!-- Overlay content -->
+              <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <span onclick="openNav()"
+              ><div class="icon">
+                <i class="bx bx-menu-alt-right text-white"></i></div
+            ></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="dark-alternate">
+        <div class="wrapper row">
+          <div class="column">
+            <div class="h2 h2-size text-white">Shop Our Products</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrapper padding-small">
+        <div class="row">
+          <div class="column tent-background text-gap small-around">
+            <h3 class="h3-size text-white">White Tent</h3>
+            <p class="text-white">$200.00 USD</p>
+          </div>
+        </div>
+        <div class="row change-direction padding-small">
+          <div class="column text-gap">
+            <h4 class="main-color">Shop By Catagory</h4>
+            <a href="#" class="btn btn-shop">Gift Cards</a>
+            <a href="#" class="btn btn-shop">Tents</a>
+            <a href="#" class="btn btn-shop">Accessories</a>
+            <a href="#" class="btn btn-shop">Packs</a>
+          </div>
+          <div class="column align-center small-gap">
+            <img
+              src="images/5e861d123df4d175e80e8beb_acme-gift-card.jpeg"
+              class="img-shop"
+            />
+            <h4 class="h4-size">Gift Card</h4>
+            <p>$25.00 USD</p>
+            <a href="#" class="btn btn-details fit">Details</a>
+          </div>
+          <div class="column small-gap align-center">
+            <img src="images/2.jpg" class="img-shop" />
+            <h4 class="h4-size">Gift Card</h4>
+            <p>$25.00 USD</p>
+            <a href="#" class="btn btn-details fit">Details</a>
+          </div>
+          <div class="column small-gap align-center">
+            <img src="images/3.jpg" class="img-shop" />
+            <h4 class="h4-size">Gift Card</h4>
+            <p>$25.00 USD</p>
+            <a href="#" class="btn btn-details fit">Details</a>
+          </div>
+        </div>
+        <div class="row change-direction">
+            <div class="column"></div>
+            <div class="column align-center small-gap">
+              <img
+                src="images/5e861d123df4d175e80e8beb_acme-gift-card.jpeg"
+                class="img-shop"
+              />
+              <h4 class="h4-size">Gift Card</h4>
+              <p>$25.00 USD</p>
+              <a href="#" class="btn btn-details fit">Details</a>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="dark-alternate padding-small padding-border">
+        <div class="wrapper row top-change change-center">
+          <div class="column">
+            <a href="#"
+              ><img src="images/5e7ff57adad44d1f072965b6_logo.svg" /
+              class="align-center"></a
+            >
+          </div>
+          <div class="column align-end">
+            <ul class="fnav text-gap">
+              <div class="icon-holder"><i class="bx bxl-twitter"></i></div>
+              <div class="icon-holder">
+                <i class="bx bxl-facebook-circle"></i>
+              </div>
+              <div class="icon-holder">
+                <i class="bx bxl-instagram-alt"></i>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column align-center">
+            <p class="text-white">Made By Nathan</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* Open when someone clicks on the span element */
+      function openNav() {
+        document.getElementById('myNav').style.width = '100%';
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+        document.getElementById('myNav').style.width = '0%';
+      }
+    </script>
+  </body>
+</html>

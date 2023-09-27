@@ -1,0 +1,673 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* background-color: black; */
+}
+
+.align-start {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-end {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.align-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dec {
+  text-decoration: navajowhite;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.change-width {
+  width: 100%;
+}
+
+/* color setup start */
+
+.red-background {
+  background-color: #eb5757;
+}
+
+.red {
+  color: #eb5757;
+}
+
+.main-color {
+  color: #333333;
+}
+
+.info-max {
+  max-width: 9rem;
+}
+
+.dark-background {
+  background-color: #333333;
+}
+
+span {
+  font-weight: bold;
+}
+
+.p-card {
+  max-width: 20rem;
+}
+
+.card-contact {
+  padding: 5rem 1rem 5rem 1rem;
+  border-radius: 10px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.white-background {
+  background-color: white;
+}
+
+/* color setup end */
+
+/* .padding-border {
+  padding-left: 25rem;
+  padding-right: 25rem;
+} */
+
+.wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.nav-gap {
+  display: flex;
+  gap: 2rem;
+}
+
+.text-gap {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.top-btn {
+  background-color: #eb5757;
+  font-size: 0.9em;
+  border-radius: 40px;
+}
+
+.nav-hover {
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.nav-hover:hover {
+  background-color: #333333;
+}
+
+.hero-image {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.221),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url('images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.tent-background {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.221),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url('images/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  min-height: 250px;
+  border-radius: 10px;
+}
+
+.donate-hero {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.221),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url('images/dessert.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.tests {
+  background-color: #222222;
+}
+
+.contact-hero {
+  background: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.221),
+      rgba(34, 34, 34, 1)
+    ),
+    url('images/phone.jpeg');
+  width: 100%;
+  background-size: 45% auto;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.hero-about {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.221),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url('images/about-hero.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.btn-shop {
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn-shop:hover {
+  background-color: black;
+  color: white;
+}
+
+.fit {
+  max-width: fit-content;
+}
+
+.h1-size {
+  font-size: 3em;
+}
+
+.h1-max {
+  max-width: 25rem;
+}
+
+.p-max {
+  max-width: 25rem;
+}
+
+.padding-section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.btn-hero {
+  border: 1px solid white;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn-hero:hover {
+  background-color: white;
+  color: black;
+}
+
+.card {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.card-size {
+  font-size: 2.5em;
+  max-width: 20rem;
+  text-align: center;
+}
+
+.small-top {
+  margin-top: 2rem;
+}
+
+.outside-background {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.221),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url('images/outside.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hello-background {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.221),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url('images/hello.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.btn-main {
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+  color: #333333;
+  background-color: white;
+}
+
+.btn-main:hover {
+  background-color: #eb5757;
+}
+
+.test {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+.relative {
+  position: relative;
+}
+
+.small-gap {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
+
+.img-shop {
+  max-width: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.img-three {
+  min-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.h2-size {
+  font-size: 1.9em;
+}
+
+.btn-details {
+  transition: 0.3s ease-in-out;
+  background-color: #eb5757;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn-details:hover {
+  background-color: black;
+}
+
+.padding-small {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.img-people {
+  min-width: 400px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: absolute;
+  left: -17%;
+  top: 7%;
+  right: auto;
+  bottom: 0%;
+  width: 30%;
+  height: 0px;
+  min-height: 440px;
+  border-radius: 5px;
+}
+
+.about-height {
+  min-height: 600px;
+  top: 4%;
+}
+
+.p-about {
+  max-width: 30rem;
+}
+
+.card-shop {
+  /* max-width: fit-content; */
+  padding-left: 20rem;
+  padding-right: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-radius: 10px;
+}
+
+.adjust {
+  margin-right: 9rem;
+}
+
+li {
+  list-style: none;
+}
+
+.fnav {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-holder {
+  color: white;
+  font-size: 2.5em;
+}
+
+.btn-view {
+  background-color: black;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.img-person {
+  max-width: 30%;
+}
+
+.btn-view:hover {
+  background-color: #eb5757;
+}
+
+.dark-alternate {
+  background-color: #222222;
+}
+
+.dont-show {
+  display: none;
+}
+
+.outline {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.card-donate {
+  padding: 4rem;
+}
+
+.btn-donate {
+  padding: 15px 200px;
+}
+
+.small-around {
+  padding: 3rem;
+}
+
+.p-change {
+  font-size: 0.9em;
+}
+
+.text-form {
+  padding: 10px;
+}
+
+.submit-form {
+  padding: 5px 30px;
+  background-color: #eb5757;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+/* small nav start */
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #eb5757;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #fff;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.icon {
+  font-size: 2em;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* small nav end */
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+  .fix-width {
+    width: 100%;
+  }
+  .card-contact {
+    padding: 5rem 3.5rem 5rem 3.5rem;
+    border-radius: 10px;
+  }
+  .no-fit {
+    max-width: none;
+  }
+  .align-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .change-padding {
+    padding-top: 20rem;
+    padding-bottom: 0rem;
+  }
+
+  .change-direction {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-shop {
+    padding: 0rem;
+    border-radius: 0px;
+  }
+  .dark-alternate-hide {
+    background-color: #222222;
+  }
+  .img-people {
+    position: static;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .change-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .no-bottom {
+    padding-bottom: 0rem;
+  }
+  .p-about {
+    max-width: 40rem;
+  }
+  .dont-show {
+    display: flex;
+  }
+  .center-change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-change {
+    text-align: center;
+  }
+  .img-person {
+    max-width: 100%;
+  }
+  .contact-hero {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.221),
+        rgba(34, 34, 34, 1)
+      ),
+      url('images/phone.jpeg');
+    width: 100%;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-change {
+    display: flex;
+    flex-direction: column;
+  }
+  .change-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fix-top {
+    padding-top: 2rem;
+  }
+  .img-person {
+    max-width: 50%;
+  }
+  .p-top {
+    font-size: 0.8em;
+  }
+  .btn {
+    padding: 5px 20px;
+  }
+  .h1-size {
+    font-size: 2em;
+  }
+  .h1-max {
+    max-width: 15rem;
+  }
+  .p-size {
+    max-width: 20rem;
+  }
+  .p-change {
+    font-size: 0.9em;
+  }
+  .h2-size {
+    font-size: 2em;
+  }
+
+  .padding-section {
+    padding-top: 4rem;
+  }
+}
+
+/* * {
+  outline: 1px solid black;
+} */
